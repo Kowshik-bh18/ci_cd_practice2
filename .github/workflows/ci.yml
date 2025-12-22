@@ -1,0 +1,23 @@
+name: ci workflows
+
+on:
+  pull_request:
+    branches: [ main ]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: check repo
+        uses: actions/checkout@v4
+
+      - name: Check README existence
+        run: |
+          if [ ! -f README.md ]; then
+            echo "❌ README.md is missing"
+            exit 1
+          fi
+          echo "✅ README.md exists"
+
+      - name: Final confirmation
+        run: echo "CI completed successfully"
