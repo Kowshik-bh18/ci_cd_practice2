@@ -21,3 +21,14 @@ jobs:
 
       - name: Final confirmation
         run: echo "CI completed successfully"
+        
+      - name: create ci file
+        run: |
+          echo "successfully created ci file $(date)" >report.txt
+          
+      - name: upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci-report
+          path: report.txt
+          
