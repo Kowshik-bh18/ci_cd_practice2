@@ -1,0 +1,9 @@
+documentation:
+  - README.md
+  - docs/**
+
+ci:
+  - .github/workflows/**
+
+code:
+  - src/**
