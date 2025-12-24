@@ -1,0 +1,15 @@
+name: Auto label PR
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Label PR based on files changed
+        uses: actions/labeler@v5
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
