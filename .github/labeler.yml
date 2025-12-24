@@ -1,9 +1,12 @@
 documentation:
-  - README.md
-  - docs/**
+  - changed-files:
+      - any-glob-to-any-file: README.md
+      - any-glob-to-any-file: docs/**
 
 ci:
-  - .github/workflows/**
+  - changed-files:
+      - any-glob-to-any-file: .github/workflows/**
 
 code:
-  - src/**
+  - changed-files:
+      - any-glob-to-any-file: src/**
