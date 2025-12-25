@@ -1,0 +1,8 @@
+# Default reviewers
+* @dev1 @dev2
+
+# Docs changes
+README.md @tech-writer
+
+# CI changes
+.github/workflows/* @devops
