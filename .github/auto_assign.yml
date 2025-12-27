@@ -1,20 +1,16 @@
 reviewers:
+  frontend:
+    - forntdev
+  backend:
+    - bacdev2
   docs:
     - vkab18
 
-  backend:
-    - bacdev2
-
-  frontend:
-    - forntdev
-
 files:
+  frontend:
+    - "frontend/**"
+  backend:
+    - "backend/**"
   docs:
     - "README.md"
     - "docs/**"
-
-  backend:
-    - "backend/**"
-
-  frontend:
-    - "frontend/**"
