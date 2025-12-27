@@ -3,10 +3,10 @@ reviewers:
     - vkab18
 
   backend:
-    - vkab18
+    - bacdev2
 
   frontend:
-    - vkab18
+    - forntdev
 
 files:
   docs:
