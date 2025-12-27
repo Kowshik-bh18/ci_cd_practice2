@@ -1,16 +1,18 @@
-name: Auto Assign Reviewers
+name: Auto Assign Reviewers by File Change
 
 on:
   pull_request:
-    types: [opened, reopened]
+    types: [opened, synchronize, reopened]
 
 permissions:
   pull-requests: write
 
 jobs:
-  assign-reviewer:
+  auto-assign:
     runs-on: ubuntu-latest
 
     steps:
       - name: Auto assign reviewers
         uses: kentaro-m/auto-assign-action@v1.2.5
+        with:
+          configuration-path: .github/auto_assign.yml
