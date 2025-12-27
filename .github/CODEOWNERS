@@ -1,8 +1,9 @@
-# Default reviewers
-* @dev1 @dev2
+# Documentation
+README.md        @vkab18
+docs/**          @vkab18
 
-# Docs changes
-README.md @tech-writer
+# Frontend
+frontend/**      @forntdev
 
-# CI changes
-.github/workflows/* @devops
+# Backend
+backend/**       @bacdev2
