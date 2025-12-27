@@ -2,7 +2,7 @@ name: Auto Assign Reviewers by File Change
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened]
+    types: [opened, reopened, synchronize]
 
 permissions:
   pull-requests: write
@@ -10,6 +10,9 @@ permissions:
 jobs:
   auto-assign:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
-      - uses: kentaro-m/auto-assign-action@v1.2.5
+
+      - name: Auto assign reviewers
+        uses: kentaro-m/auto-assign-action@v1.2.5
