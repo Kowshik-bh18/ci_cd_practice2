@@ -1,5 +1,20 @@
-addReviewers: true
-
 reviewers:
-  - vkab18
-numberOfReviewers: 1
+  docs:
+    - vkab18
+
+  backend:
+    - vkab18
+
+  frontend:
+    - vkab18
+
+files:
+  docs:
+    - "README.md"
+    - "docs/**"
+
+  backend:
+    - "backend/**"
+
+  frontend:
+    - "frontend/**"
